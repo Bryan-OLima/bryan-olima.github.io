@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500&family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600;1,800&display=swap');
+
+:root {
+--font1: 'Open Sans', Helvetica, sans-serif;
+--font2: 'David Libre', sans-serif;
+--pri-cor: #29417C ;
+--seg-cor: #DFECF4;
+--btn-cor: #48CAFD;
+--blk-cor: #030304;
+--shadow-cor: #78aac2;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+}
+
+/*Top Menu start*/
+header {
+    background-color: var(--seg-cor);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.right > a {
+   margin: 16px;
+   color: var(--pri-cor); 
+}
+
+.right > a:hover {
+    color: var(--btn-cor);
+}
+
+#flag {
+    height: 15px;
+}
+/*Top Menu End*/
+
+/* input button start */
+input[type="button"] {
+    background-color: var(--btn-cor) ;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: var(--pri-cor);
+    padding: 13px;
+    font-size: 1.1em;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+input[type="button"]:hover {
+    background-image: linear-gradient(to bottom, #7bd8fd, var(--btn-cor), #7bd8fd);
+    box-shadow: 1px 1px 3px 1px var(--shadow-cor);
+    transition: 0.3s;
+}
+/* input button end*/
+
+/*First Part of WebPage*/
+main {
+    background-image: linear-gradient(120deg, var(--pri-cor), #334c8b);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sobre {
+    margin: 5px;
+}
+
+.sobre > p {
+    max-width: 700px;
+    text-align: center;
+}
+/*End of First Part WebPage*/
+
+
+/* selectors from text */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+h2 {
+    color: var(--pri-cor);
+    font-weight: 600;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+p {
+    text-indent: 20px;
+}
+
+small {
+    font-style: italic;
+}
+
+span {
+    padding-left: 20px;
+    font-size: 0.9em;
+    align-items: center;
+}
+
+hr {
+    width: 70vw;
+    height: 1px;
+    border: none;
+    border-radius: 10px;
+    border-top: 2px solid var(--seg-cor);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* end of selectors */
+
+/* Projects Part */
+section {
+    font-weight: 400; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+section#direita {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.sec-int {
+    width: 35vw;
+    text-align: left;  
+}
+
+.sec-int > p, #sociais > p {
+    margin-bottom: 30px;
+}
+
+.img-test > a > img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.img-test > a > img:hover {
+    box-shadow: 1px 1px 20px 1px var(--shadow-cor);
+    transition: 0.5s;
+}
+/* end of projecs part */
+
+/* socials part */
+#sociais {
+    background-color: var(--seg-cor);
+    color: var(--blk-cor);
+}
+
+#sociais > h1 {
+    color: var(--pri-cor);
+}
+/*end of socials part*/
+
+/*footer*/
+footer {
+    color: var(--blk-corr);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.img-foot {
+    padding-top: 50px;
+}
+
+footer > div > a > img {
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 30px;
+}
+
+footer > div > a > img:hover {
+    color: #64d2fd;
+    box-shadow: 0px 0px 5px 1px var(--shadow-cor);
+    cursor: pointer;
+}
+
+footer > hr  {
+    width: 20vw;
+}
+
+#sociais {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*End of footer*/
