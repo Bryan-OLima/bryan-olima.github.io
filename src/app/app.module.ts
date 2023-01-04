@@ -10,6 +10,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatCardModule,
+    MatButtonModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

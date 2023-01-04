@@ -1,0 +1,58 @@
+section { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 100px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+mat-card {
+    width: 250px;
+    height: 440px;
+}
+
+mat-card-title {
+    color: white;
+}
+
+mat-card-subtitle {
+    color: #9ca4a1;
+    font-weight: 300;
+}
+
+mat-card-content {
+    margin-top: 10px;
+    color: #9ca4a1;
+}
+
+mat-card-actions {
+    justify-content: space-between;
+}
+
+mat-chip {
+    height: 20px;
+}
+
+mat-card-header {
+    margin-top: -10px;
+}
+
+img {
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}

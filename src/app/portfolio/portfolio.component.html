@@ -1,1 +1,35 @@
-<app-header></app-header>
+
+<section>
+    <app-header></app-header>
+    <main>
+        <div class="card" *ngFor="let card of cards">
+            <mat-card>
+                <mat-card-header>
+
+                    <mat-card-title>
+                        {{card.title}}
+                    </mat-card-title>
+
+                    <mat-card-subtitle>
+                        <mat-chip-listbox>
+                            <mat-chip color="primary">
+                                {{card.subtitle}}
+                            </mat-chip>
+                        </mat-chip-listbox>
+                    </mat-card-subtitle>
+                    
+                </mat-card-header>
+
+                <img src="{{card.imgSrc}}" target="_blank" alt="">
+                <mat-card-content>
+                   {{card.content}}
+                </mat-card-content>
+
+                <mat-card-actions>
+                    <a href="{{card.gitHub}}" target="_blank"><button mat-raised-button color="primary">Git Hub</button></a>
+                    <a href="{{card.tryItOut}}" target="_blank"><button mat-raised-button color="primary">Check it</button></a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </main>
+</section>

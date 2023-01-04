@@ -15,10 +15,13 @@ export class AboutMeComponent {
       name: "Made some Angular 13+/Angular Material projects."
     },
     {
-      name:"Consuming internals and externals API's."
+      name: "Consuming internals and externals API's."
     },
     {
-      name:"Unity tests with Jasmine/Karma."
+      name: "Unity tests with Jasmine/Karma."
+    },
+    {
+      name: "English."
     },
     {
       name: "Git."
@@ -60,7 +63,7 @@ export class AboutMeComponent {
       name: "Team work."
     },
     {
-    name: "Empathy."   
+      name: "Empathy."   
     },
     {
       name: "Ethic."
