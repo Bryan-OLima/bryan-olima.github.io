@@ -1,0 +1,46 @@
+<app-header></app-header>
+<main>
+    <section class="infos">
+        <div class="profile-photo">
+            <img src="../../assets/images/profile.jpg" alt="profile photo">
+        </div>
+        <div class="name">
+           <h1> Bryan Lima </h1>
+        </div>
+        <div class="stacks">
+           <h3> HTML | CSS | SCSS | Javascript | Typescript | Angular </h3>
+        </div>
+
+        <hr>
+
+        <section class="details">
+            <h2 class="centered">Hello World!</h2>
+            <p class="fonts">
+                Hi there, visitor. I'm Bryan Osorio de Lima and I'm 27. 
+                I'm a developer since 2022 when I was starting working as <strong>trainee software developer</strong>.
+            </p>
+            <p class="fonts">
+                I'm focused on front end development with <strong>Angular</strong>. 
+                I'm also studying about DB, API consumption, create API and after that I'm intend to study a back end language.
+            </p>
+            
+            <hr style="margin: auto; margin-top: 50px; margin-bottom: 50px;">
+
+            <h2 style="margin-left: 10px;">Hard Skills</h2>
+            <ul class="fonts" *ngFor="let hardSkill of hardSkills">
+                <li>
+                    {{hardSkill.name}}
+                </li>
+            </ul>
+
+            <h2 style="margin-left: 10px;">
+                Soft Skills
+            </h2>
+            <ul class="fonts" *ngFor="let softSkill of softSkills">
+                <li>
+                    {{softSkill.name}}
+                </li>
+            </ul>
+        </section>
+    </section>
+</main>

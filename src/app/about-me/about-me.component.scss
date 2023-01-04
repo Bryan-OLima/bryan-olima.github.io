@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300;500;600&display=swap');
+
+
+h1 {
+    font-family: 'Anek Devanagari', sans-serif !important;
+    font-weight: 600;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Anek Devanagari', sans-serif !important;
+    font-weight: 600;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #9ca4a1;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.fonts {
+    color: #9ca4a1;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-size: 1em;
+    font-weight: 300;
+    margin: 10px;
+    text-align: justify;
+}
+
+.centered {
+    text-align: center;
+}
+
+hr {
+    width: 30%;
+    min-width: 400px;
+    color: #9ca4a1;
+    opacity: 5%;
+}
+
+main, .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;    
+    width: 30%;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+    margin: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 250px;
+    box-shadow: 0px 2px 5px 2px black;
+}
+
+img:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 3px black;
+}
